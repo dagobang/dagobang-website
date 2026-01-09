@@ -1,0 +1,212 @@
+{
+  "Metadata": {
+    "title": "Dagobang - 0.1% Fee Meme Trading Browser Extension",
+    "description": "Dagobang is a non-custodial browser extension for Meme trading. Trade on-chain directly on your favorite chart sites with silent signing, custom private RPC, and ultra-low fees."
+  },
+  "Nav": {
+    "features": "Highlights",
+    "security": "Security",
+    "howItWorks": "How it Works",
+    "install": "Install",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "badge": "Dagobang 打狗棒 · Beta",
+    "title": "0.1% Fee Meme Trading Plugin",
+    "subtitleLine1": "Trade instantly via floating window on your favorite chart sites.",
+    "subtitleLine2": "Ultra-low Fees · Self-custody · Private Nodes Anti-MEV",
+    "subtitleLine3": "",
+    "primaryCta": "Download Extension",
+    "secondaryCta": "Installation Tutorial",
+    "primaryCtaNote": "Chrome / Edge supported · 1 min Fast Install",
+    "alertTitle": "Preferred for Advanced Web3 Players",
+    "alertBody": "Current version is in beta. Only for users with Web3 experience. Please use after understanding the risks.",
+    "screenshotBadge": "Immersive Trading Floater",
+    "screenshotAlt": "Dagobang Trading Interface"
+  },
+  "Highlights": {
+    "eyebrow": "Core Advantages",
+    "title": "Born for High-Frequency Trading",
+    "description": "Cutting all friction. Optimizing fees, security, and operation rhythm to the extreme.",
+    "fees": {
+      "title": "Ultra-low Fees",
+      "body": "Plugin fees only 0.1%. Significantly reduces high-frequency trading costs for maximum profit.",
+      "note": "Transparent Fees"
+    },
+    "nonCustodial": {
+      "title": "Non-custodial Keys",
+      "body": "No centralized server. Private keys encrypted and stored locally. Security model consistent with major wallets.",
+      "note": "Your Assets Fully Controlled by You"
+    },
+    "silentSign": {
+      "title": "Silent Signing Mode",
+      "body": "Say goodbye to frequent popups. Auto-sign and broadcast after authorization. Continuous ordering is silky smooth.",
+      "note": "Efficiency Meets Security"
+    },
+    "rpc": {
+      "title": "Private RPC Support",
+      "body": "Connect to self-hosted or paid private nodes to avoid public node rate limits or front-running.",
+      "note": "Designed for Professional Traders"
+    },
+    "overlay": {
+      "title": "Seamless Overlay Experience",
+      "body": "Does not change original browsing habits. Non-intrusive floating window overlaid on the page. Ready to use.",
+      "note": "Runs Independently, No Interference"
+    }
+  },
+  "HowItWorks": {
+    "eyebrow": "How It Works",
+    "title": "How Dagobang Works?",
+    "intro": "From chart viewing to execution, the entire link is locally constructed, wallet signed, and RPC broadcast.",
+    "step1": {
+      "title": "Browse Token on Chart Sites",
+      "body": "Open your habitual chart site. Dagobang will attempt to identify the current token contract address (e.g., BSC contract) from the page."
+    },
+    "step2": {
+      "title": "Get Quotes via RPC & DEX",
+      "body": "Plugin uses your configured RPC node to read on-chain data and fetch prices, depth, and estimated slippage via DEX / Aggregator official APIs."
+    },
+    "step3": {
+      "title": "Construct Transaction Locally",
+      "body": "You select buy or sell, set amount and slippage in the floating window. Dagobang constructs the corresponding Swap transaction locally."
+    },
+    "step4": {
+      "title": "Browser Silent Signing",
+      "body": "After wallet connection and basic authorization, transactions initiated by Dagobang can be silently signed within the browser, usually without per-transaction popup confirmations."
+    },
+    "step5": {
+      "title": "Broadcast On-Chain & View Results",
+      "body": "Signed transactions are broadcast to the chain via your chosen RPC. You can check status and history in your wallet or block explorer."
+    }
+  },
+  "Install": {
+    "eyebrow": "Installation Tutorial",
+    "title": "How to Install Dagobang Plugin (Chrome / Edge)",
+    "subtitle": "Start your high-speed trading journey in 4 simple steps",
+    "intro": "Currently requires manual loading of the unzipped extension package. The whole process takes about 1 minute.",
+    "ctaPanel": {
+      "title": "Ready to start?",
+      "body": "Download Dagobang now and experience the next generation of on-chain trading tools.",
+      "support": "Supports Windows & Mac"
+    },
+    "step1": {
+      "title": "Download Plugin Package",
+      "body": "Click 'Download Extension (Beta)' at the top of the page, save the zip file locally and unzip it to any directory."
+    },
+    "step2": {
+      "title": "Open Extensions Page",
+      "body": "Enter chrome://extensions in the browser address bar and press Enter. Turn on 'Developer mode' in the top right corner."
+    },
+    "step3": {
+      "title": "Load Unpacked Extension",
+      "body": "Click 'Load unpacked' and select the plugin folder you just unzipped. After successful installation, you will see the Dagobang icon in the top right corner of the browser."
+    },
+    "step4": {
+      "title": "Pin Plugin Icon (Optional)",
+      "body": "Click the small puzzle icon in the top right, find Dagobang in the list, and pin it to the toolbar for easy access at any time."
+    }
+  },
+  "FAQ": {
+    "eyebrow": "FAQ",
+    "title": "FAQ",
+    "intro": "Here are a few common questions. For more, feel free to contact us at the bottom.",
+    "q1": {
+      "question": "Does Dagobang custody my assets or private keys?",
+      "answer": "No. We do not touch your private keys. All assets and signatures are managed by your browser wallet. The security model is consistent with mainstream wallet plugins."
+    },
+    "q2": {
+      "question": "What are the fees for Dagobang?",
+      "answer": "The plugin fee is in the 0.1% range. You also need to pay on-chain Gas and DEX protocol fees."
+    },
+    "q3": {
+      "question": "Is silent signing really safe?",
+      "answer": "Silent signing can significantly reduce interruptions and improve experience, but it also reduces manual confirmation steps. Please use it only after confirming the reliability of the installation package source, fully understanding the working principle, and trusting this plugin."
+    },
+    "q4": {
+      "question": "Is Dagobang an official plugin of a chart site?",
+      "answer": "No. Dagobang is an independently developed third-party tool and has no official cooperation or affiliation with any chart platform."
+    },
+    "q5": {
+      "question": "Why support custom privacy RPC?",
+      "answer": "Custom privacy RPC can avoid all requests being concentrated on public nodes, reducing the risk of rate limiting, monitoring, or front-running, while improving stability and response speed under high-frequency trading. You can also continue to use the default RPC without any modification."
+    },
+    "q6": {
+      "question": "Which chains are currently supported?",
+      "answer": "The current version mainly supports BSC chain trading. Solana is the next chain we prioritize in our plan and will be launched gradually in subsequent versions."
+    },
+    "q7": {
+      "question": "Why can trades be sent without a popup confirmation?",
+      "answer": "After you enter your password and unlock the wallet inside the extension, the decrypted key temporarily resides in your browser's memory. In scenarios where silent signing is enabled, Dagobang uses this key locally to sign transactions without opening a popup for every single one, trading one layer of confirmation for faster execution. You can lock the extension at any time or revoke its permissions in your wallet to clear the key from memory and return to a popup based flow."
+    },
+    "q8": {
+      "question": "How should I configure custom RPC endpoints?",
+      "answer": "In the extension settings, enter one RPC URL per line. It is recommended to mix endpoints from different providers, for example a combination of public and paid nodes, and to prioritize official or reputable providers you trust. This helps balance speed, stability and privacy instead of relying on a single crowded public endpoint."
+    }
+  },
+  "Footer": {
+    "rights": "© 2026 Dagobang. All rights reserved."
+  },
+  "Contact": {
+    "eyebrow": "Contact Us",
+    "title": "Contact & Roadmap",
+    "intro": "Dagobang is still iterating fast. Any feedback is welcome.",
+    "telegramLabel": "Telegram",
+    "telegramValue": "https://t.me/dagobang",
+    "twitterLabel": "Twitter / X",
+    "twitterValue": "https://x.com/i/communities/2009107417641177478",
+    "roadmapTitle": "Product Roadmap",
+    "shortTermTitle": "Phase 1",
+    "shortTerm1": "Perfect BSC trading core functions.",
+    "shortTerm2": "Optimize silent signing & RPC interaction experience.",
+    "shortTerm3": "Improve adaptation for mainstream chart sites.",
+    "midTermTitle": "Phase 2",
+    "midTerm1": "Integrate Solana ecosystem.",
+    "midTerm2": "Add contract security detection function.",
+    "longTermTitle": "Phase 3",
+    "longTerm1": "Launch more automated auxiliary trading tools.",
+    "longTerm2": "Expand multi-chain support."
+  },
+  "Security": {
+    "eyebrow": "Security Notice",
+    "title": "Non-custodial design, security model and risk boundaries",
+    "intro": "Dagobang is a local browser extension. It does not custody your assets or private keys. We aim to balance UX and safety, but like any hot wallet the real security boundary is your device environment and personal practices.",
+    "nonCustodial": {
+      "title": "Local non‑custodial storage",
+      "body": "Your seed phrase and private keys are encrypted and stored only in the browser, never on our servers. The encryption key is derived from the password you choose, and you can lock or reset it at any time."
+    },
+    "noServer": {
+      "title": "Zero backend dependency",
+      "body": "Dagobang talks directly to blockchain nodes and DEX or aggregator APIs. There is no proprietary custody backend in the middle, reducing single‑point failure and centralised data leakage risks."
+    },
+    "leastPrivilege": {
+      "title": "Least privilege permissions",
+      "body": "The extension only requests the minimal browser permissions it needs, such as storing configuration and accessing the active tab. You can review and revoke these permissions in your browser at any time."
+    },
+    "silentSign": {
+      "title": "Boundaries of silent signing",
+      "body": "Once you unlock and grant permissions, Dagobang can silently sign in agreed‑upon scenarios to avoid repeated popups and improve high‑frequency trading experience. Only enable and use this if you fully understand and accept how it works."
+    },
+    "metamaskCompare": {
+      "title": "Security model compared to MetaMask",
+      "intro": "From a cryptographic perspective, Dagobang is on the same level as mainstream browser wallets. The key differences are in UX and target use cases.",
+      "items": {
+        "0": "Non‑custodial local encryption is the same: both Dagobang and MetaMask encrypt your seed and keys locally and never upload them to a server, deriving the encryption key from your password.",
+        "1": "Unlocked keys live briefly in memory: for both MetaMask and Dagobang, once you unlock the wallet the browser process temporarily holds a plaintext key to sign transactions. If the device is already compromised by malware, no hot wallet can offer perfect protection.",
+        "2": "The real difference is in interaction: MetaMask usually prompts you with a confirmation window for each transaction, while Dagobang uses silent signing in agreed scenarios after you unlock, reducing popups and better fitting fast, high‑frequency trading."
+      },
+      "summary": "In short: for local encryption and non‑custodial design Dagobang is comparable to MetaMask. What primarily determines your risk is how clean your device is, how you manage approvals and how much capital you keep in hot wallets."
+    },
+    "riskWarning": {
+      "title": "Important risk notice",
+      "items": {
+        "0": "Trading digital assets and meme tokens is extremely risky and may result in partial or total loss of principal due to volatility, project failure, contract bugs, hacks or regulatory changes.",
+        "1": "Dagobang is a browser extension only. It is not investment advice, a financial product or any form of yield guarantee.",
+        "2": "All trades conducted through Dagobang are based on your own judgement. You bear full responsibility for any outcomes.",
+        "3": "Dagobang does not guarantee the security, reliability or legality of any third‑party websites, smart contracts, protocols or projects you interact with.",
+        "4": "Before using the extension, ensure that participation in relevant digital‑asset activities is permitted in your jurisdiction and that you understand and comply with all applicable laws and regulations.",
+        "5": "To the maximum extent permitted by law, the Dagobang team is not liable for any direct or indirect loss arising from the use of, or reliance on, the extension or any information it provides."
+      }
+    }
+  }
+}
