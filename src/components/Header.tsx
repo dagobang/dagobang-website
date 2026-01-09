@@ -35,10 +35,12 @@ export default function Header() {
   return (
     <header className="w-full fixed top-0 z-50 bg-white/80 dark:bg-black/80 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <div className="flex items-center gap-2">
+        <a className="flex items-center gap-2"
+          key="home"
+          href="/">
           <Image src="/logo.svg" alt="Dagobang Logo" width={32} height={32} />
           <span className="font-bold text-xl text-zinc-900 dark:text-white">Dagobang</span>
-        </div>
+        </a>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-6 text-sm font-medium text-zinc-600 dark:text-zinc-300">

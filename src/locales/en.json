@@ -145,7 +145,8 @@
     }
   },
   "Footer": {
-    "rights": "© 2026 Dagobang. All rights reserved."
+    "rights": "© 2026 Dagobang. All rights reserved.",
+    "privacy": "Privacy Policy"
   },
   "Contact": {
     "eyebrow": "Contact Us",
@@ -166,6 +167,35 @@
     "longTermTitle": "Phase 3",
     "longTerm1": "Launch more automated auxiliary trading tools.",
     "longTerm2": "Expand multi-chain support."
+  },
+  "Privacy": {
+    "title": "Dagobang Browser Extension Privacy Policy",
+    "updatedAt": "Last updated: 2026-01-09",
+    "intro": "The Dagobang browser extension (\"the Extension\") is provided by the Dagobang team. The Extension is designed around the principles of least privilege and non‑custodial architecture. We do not collect or upload any personally identifiable information.",
+    "section1": {
+      "title": "1. What data do we collect?",
+      "body": "The Extension does not collect your name, email, phone number or other personal identity information. It does not collect your browsing history, search queries, chat content or similar personal content, and it does not collect device fingerprints, advertising identifiers or other cross‑site tracking identifiers. The Extension does not upload user data to servers controlled by us, nor do we sell or share user data with third parties."
+    },
+    "section2": {
+      "title": "2. Local storage and on‑chain data",
+      "body": "To provide its functionality, the Extension stores certain information in your browser's local storage that is directly related to your use, such as plugin configuration (network selection, gas presets, slippage parameters, RPC settings, etc.), encrypted wallet key material (for example, encrypted private keys), and UI preferences (floating window position, notification placement, etc.). This data is stored only on your local device and is used solely to provide the Extension's functionality and improve your experience. We cannot access this data. Any on‑chain transaction records you create through the Extension (such as transaction hashes, addresses and amounts) are stored on the blockchain itself and can be viewed by anyone via block explorers. This is an inherent property of public ledgers and is not data collected or controlled by us."
+    },
+    "section3": {
+      "title": "3. Third‑party services",
+      "body": "The Extension may call blockchain RPC nodes, decentralized trading protocols or price/market data APIs to fetch on‑chain data and market information. These requests are made directly by your browser. We do not aggregate or permanently store logs of these requests on our own servers."
+    },
+    "section4": {
+      "title": "4. Data sharing and commercial use",
+      "body": "We do not sell, rent or commercially exploit user data to any third party. The Extension does not run ads, does not perform remarketing and does not build user profiles, nor do we use data for any purposes unrelated to enabling on‑chain trading functionality."
+    },
+    "section5": {
+      "title": "5. Security and risk notice",
+      "body": "Please keep your device, browser and wallet environment secure, and never share your seed phrase or private keys with anyone. If you obtain the Extension from unofficial sources, there may be a risk of tampering; always ensure that your download source is trustworthy. The Extension is a browser‑side tool and cannot replace your own judgement and management of your security environment."
+    },
+    "section6": {
+      "title": "6. Policy updates and contact",
+      "body": "If we make significant changes to this Privacy Policy in the future, we will announce them on the official website or on the extension listing page. Your continued use of the Extension will be deemed acceptance of the updated policy. If you have any questions about this Privacy Policy, please contact us using the channels provided on the official website."
+    }
   },
   "Security": {
     "eyebrow": "Security Notice",
