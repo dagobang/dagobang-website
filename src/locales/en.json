@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "title": "Dagobang - 0.1% Fee Meme Trading Browser Extension",
+    "title": "Dagobang - 0.1% Fee Meme Trading Tool",
     "description": "Dagobang is a non-custodial browser extension for Meme trading. Trade on-chain directly on your favorite chart sites with silent signing, custom private RPC, and ultra-low fees."
   },
   "Nav": {
@@ -13,7 +13,7 @@
   },
   "Hero": {
     "badge": "Dagobang 打狗棒 · Beta",
-    "title": "0.1% Fee Meme Trading Plugin",
+    "title": "0.1% Fee Meme Trading Tool",
     "subtitleLine1": "Trade instantly via floating window on your favorite chart sites.",
     "subtitleLine2": "Ultra-low Fees · Self-custody · Private Nodes Anti-MEV",
     "subtitleLine3": "",
