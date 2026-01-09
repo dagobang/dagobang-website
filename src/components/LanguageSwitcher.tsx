@@ -1,5 +1,6 @@
 import { useLocale } from "next-intl";
 import { useTransition } from "react";
+
 import { usePathname, useRouter } from "@/libs/i18nNavigation";
 
 export function LanguageSwitcher() {
