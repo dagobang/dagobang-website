@@ -78,11 +78,12 @@ export function FeaturesSection() {
                       {(() => {
                         const raw = t(`${item.key}.body` as any);
                         if (item.key === 'fees') {
-                          const parts = raw.split('0.1%');
+                          if (!raw.includes('0%')) return raw;
+                          const parts = raw.split('0%');
                           return (
                             <>
                               {parts[0]}
-                              <span className="font-bold text-lg text-emerald-700">0.1%</span>
+                              <span className="font-bold text-lg text-emerald-700">0%</span>
                               {parts[1] ?? ''}
                             </>
                           );

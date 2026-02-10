@@ -1,4 +1,3 @@
-import { useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 
 import BackToTop from '@/components/BackToTop';
@@ -15,7 +14,6 @@ import { SecuritySection } from '@/components/sections/SecuritySection';
 
 export default function Home({ params: { locale } }: { params: { locale: string } }) {
   setRequestLocale(locale);
-  const t = useTranslations('Metadata');
 
   return (
     <main className="min-h-screen flex flex-col items-center justify-between">

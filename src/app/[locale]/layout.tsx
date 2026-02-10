@@ -10,6 +10,12 @@ import "@/styles/globals.css";
 export async function generateMetadata(
   { params }: { params: { locale: string } }
 ): Promise<Metadata> {
+  if (!SUPPORTED_LOCALES.includes(params.locale)) notFound();
+
+  const messages = (await import(`../../locales/${params.locale}.json`)).default as any;
+  const metadataTitle = messages?.Metadata?.title ?? "Dagobang 打狗棒";
+  const metadataDescription = messages?.Metadata?.description ?? "0 Fee Meme Trading Tool";
+
   const banner =
     params.locale === "zh"
       ? "/images/dgb-banner-zh.png"
@@ -18,10 +24,10 @@ export async function generateMetadata(
   return {
     title: {
       template: "%s",
-      default: "Dagobang 打狗棒",
+      default: metadataTitle,
     },
     applicationName: "Dagobang 打狗棒",
-    description: "0.1% Fee Meme Trading Tool",
+    description: metadataDescription,
     authors: {
       name: "Dagobang",
       url: "https://github.com/dagobang/dagobang-website",
@@ -30,9 +36,9 @@ export async function generateMetadata(
     openGraph: {
       type: "website",
       url: "https://dagobang.vercel.app",
-      title: "Dagobang 打狗棒",
-      description: "0.1% Fee Meme Trading Tool",
-      siteName: "Dagobang 打狗棒",
+      title: metadataTitle,
+      description: metadataDescription,
+      siteName: "Dagobang",
       images: [
         {
           url: banner,
@@ -45,7 +51,7 @@ export async function generateMetadata(
       creator: "@SeasonsRichs",
       title: {
         template: "%s",
-        default: "Dagobang 打狗棒",
+        default: metadataTitle,
       },
       images: banner,
     },

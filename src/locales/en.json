@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "title": "Dagobang - 0.1% Fee Meme Trading Tool",
+    "title": "Dagobang - Low-Fee Meme Trading Extension",
     "description": "Dagobang is a non-custodial browser extension for Meme trading. Trade on-chain directly on your favorite chart sites with silent signing, custom private RPC, and ultra-low fees."
   },
   "Nav": {
@@ -13,10 +13,10 @@
   },
   "Hero": {
     "badge": "Dagobang 打狗棒 · Beta",
-    "title": "0.1% Fee Meme Trading Tool",
-    "subtitleLine1": "Trade instantly via floating window on your favorite chart sites.",
-    "subtitleLine2": "Ultra-low Fees · Self-custody · Private Nodes Anti-MEV",
-    "subtitleLine3": "",
+    "title": "Pay less in fees. Trade with Dagobang.",
+    "subtitleLine1": "A low-fee meme trading browser extension",
+    "subtitleLine2": "An overlay trading panel on your favorite chart sites. Open and trade instantly.",
+    "subtitleLine3": "Self-custody · Silent signing · Custom private RPC support",
     "primaryCta": "Download Extension",
     "secondaryCta": "Installation Tutorial",
     "primaryCtaNote": "Chrome / Edge supported · 1 min Fast Install",
@@ -31,7 +31,7 @@
     "description": "Cutting all friction. Optimizing fees, security, and operation rhythm to the extreme.",
     "fees": {
       "title": "Ultra-low Fees",
-      "body": "Plugin fees only 0.1%. Significantly reduces high-frequency trading costs for maximum profit.",
+      "body": "Plugin fee is 0% now and is planned to adjust to 0.1% later. Significantly reduces high-frequency trading costs for maximum profit.",
       "note": "Transparent Fees"
     },
     "nonCustodial": {
@@ -84,27 +84,51 @@
     "eyebrow": "Installation Tutorial",
     "title": "How to Install Dagobang Plugin (Chrome / Edge)",
     "subtitle": "Start your high-speed trading journey in 4 simple steps",
-    "intro": "Currently requires manual loading of the unzipped extension package. The whole process takes about 1 minute.",
+    "intro": "Install from the Chrome Web Store. The whole process takes about 1 minute.",
+    "modes": {
+      "webStore": "Chrome Web Store",
+      "github": "GitHub Manual Install"
+    },
     "ctaPanel": {
       "title": "Ready to start?",
-      "body": "Download Dagobang now and experience the next generation of on-chain trading tools.",
-      "support": "Supports Windows & Mac"
+      "body": "Open the Chrome Web Store page and add Dagobang to your browser.",
+      "support": "Supports Windows & Mac",
+      "githubTitle": "Review is slow? Install locally",
+      "githubBody": "Download the latest package from GitHub Releases, unzip it, then load it in Chrome with Developer Mode.",
+      "githubCta": "Open GitHub Releases",
+      "githubSupport": "Only download from the official repo"
     },
     "step1": {
-      "title": "Download Plugin Package",
-      "body": "Click 'Download Extension (Beta)' at the top of the page, save the zip file locally and unzip it to any directory."
+      "title": "Open Chrome Web Store",
+      "body": "Open the Dagobang listing and click “Add to Chrome”."
     },
     "step2": {
-      "title": "Open Extensions Page",
-      "body": "Enter chrome://extensions in the browser address bar and press Enter. Turn on 'Developer mode' in the top right corner."
+      "title": "Confirm Installation",
+      "body": "Click “Add extension” in the popup and wait for the install to complete."
     },
     "step3": {
-      "title": "Load Unpacked Extension",
-      "body": "Click 'Load unpacked' and select the plugin folder you just unzipped. After successful installation, you will see the Dagobang icon in the top right corner of the browser."
+      "title": "Pin the Extension",
+      "body": "Click the puzzle icon in the toolbar, find Dagobang, and pin it for quick access."
     },
     "step4": {
-      "title": "Pin Plugin Icon (Optional)",
-      "body": "Click the small puzzle icon in the top right, find Dagobang in the list, and pin it to the toolbar for easy access at any time."
+      "title": "Open & Start Trading",
+      "body": "Open a supported chart site and launch Dagobang from the pinned icon."
+    },
+    "localStep1": {
+      "title": "Download from GitHub",
+      "body": "Go to Releases and download the latest build to your computer."
+    },
+    "localStep2": {
+      "title": "Unzip the folder",
+      "body": "Extract the zip to a folder and keep the folder structure unchanged."
+    },
+    "localStep3": {
+      "title": "Load unpacked extension",
+      "body": "Open chrome://extensions/, enable Developer Mode, then click “Load unpacked”."
+    },
+    "localStep4": {
+      "title": "Pin & start using it",
+      "body": "Pin Dagobang to the toolbar, refresh your chart site, and open the overlay panel."
     }
   },
   "FAQ": {
@@ -117,7 +141,7 @@
     },
     "q2": {
       "question": "What are the fees for Dagobang?",
-      "answer": "The plugin fee is in the 0.1% range. You also need to pay on-chain Gas and DEX protocol fees."
+      "answer": "The plugin fee is 0% now and is planned to adjust to 0.1% later. You also need to pay on-chain Gas and DEX protocol fees."
     },
     "q3": {
       "question": "Is silent signing really safe?",

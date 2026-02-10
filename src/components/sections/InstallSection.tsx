@@ -1,17 +1,34 @@
 'use client';
 
-import { Download, Settings, Play, CheckCircle, ArrowRight } from 'lucide-react';
+import { Download, Settings, Play, CheckCircle, Github, FolderOpen } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { useMemo, useState } from 'react';
 
 export function InstallSection() {
   const t = useTranslations('Install');
+  const chromeWebStoreUrl =
+    'https://chromewebstore.google.com/detail/kanpnbgbacokjemdbijjokmdmpicimpi';
+  const githubLatestReleaseUrl = 'https://github.com/dagobang/dagobang-extention/releases/latest';
 
-  const steps = [
-    { icon: Download, key: 'step1' },
-    { icon: Settings, key: 'step2' },
-    { icon: Play, key: 'step3' },
-    { icon: CheckCircle, key: 'step4' }
-  ];
+  const [installMode, setInstallMode] = useState<'webStore' | 'github'>('webStore');
+
+  const steps = useMemo(() => {
+    if (installMode === 'github') {
+      return [
+        { icon: Github, key: 'localStep1' },
+        { icon: FolderOpen, key: 'localStep2' },
+        { icon: Settings, key: 'localStep3' },
+        { icon: CheckCircle, key: 'localStep4' }
+      ];
+    }
+
+    return [
+      { icon: Download, key: 'step1' },
+      { icon: Settings, key: 'step2' },
+      { icon: Play, key: 'step3' },
+      { icon: CheckCircle, key: 'step4' }
+    ];
+  }, [installMode]);
 
   return (
     <section id="install" className="w-full py-10 bg-zinc-200 dark:bg-zinc-900/50">
@@ -30,6 +47,33 @@ export function InstallSection() {
 
             {/* Steps List */}
             <div className="p-6 md:p-10 space-y-6">
+              <div className="flex items-center gap-2 rounded-2xl bg-zinc-100 dark:bg-zinc-900 p-1 w-fit">
+                <button
+                  type="button"
+                  onClick={() => setInstallMode('webStore')}
+                  className={[
+                    'px-4 py-2 rounded-2xl text-sm font-semibold transition',
+                    installMode === 'webStore'
+                      ? 'bg-white dark:bg-black text-zinc-900 dark:text-white shadow-sm'
+                      : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white',
+                  ].join(' ')}
+                >
+                  {t('modes.webStore' as any)}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setInstallMode('github')}
+                  className={[
+                    'px-4 py-2 rounded-2xl text-sm font-semibold transition',
+                    installMode === 'github'
+                      ? 'bg-white dark:bg-black text-zinc-900 dark:text-white shadow-sm'
+                      : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white',
+                  ].join(' ')}
+                >
+                  {t('modes.github' as any)}
+                </button>
+              </div>
+
               {steps.map((step, index) => {
                 const Icon = step.icon;
                 return (
@@ -61,19 +105,24 @@ export function InstallSection() {
 
               <div className="relative z-10 max-w-sm">
                 <div className="mb-6 inline-flex p-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
-                  <Download className="w-10 h-10 text-white" strokeWidth={1.5} />
+                  {(installMode === 'github' ? <Github className="w-10 h-10 text-white" strokeWidth={1.5} /> : <Download className="w-10 h-10 text-white" strokeWidth={1.5} />)}
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">
-                  {t('ctaPanel.title' as any)}
+                  {t((installMode === 'github' ? 'ctaPanel.githubTitle' : 'ctaPanel.title') as any)}
                 </h3>
                 <p className="text-zinc-400 mb-6 text-sm">
-                  {t('ctaPanel.body' as any)}
+                  {t((installMode === 'github' ? 'ctaPanel.githubBody' : 'ctaPanel.body') as any)}
                 </p>
-                <button className="w-full py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-white font-bold text-base transition-all shadow-lg shadow-emerald-500/25 active:scale-95">
-                  {t('step1.title' as any)}
-                </button>
+                <a
+                  href={installMode === 'github' ? githubLatestReleaseUrl : chromeWebStoreUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block w-full py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-white font-bold text-base transition-all shadow-lg shadow-emerald-500/25 active:scale-95"
+                >
+                  {t((installMode === 'github' ? 'ctaPanel.githubCta' : 'step1.title') as any)}
+                </a>
                 <p className="mt-4 text-xs text-zinc-500">
-                  {t('ctaPanel.support' as any)}
+                  {t((installMode === 'github' ? 'ctaPanel.githubSupport' : 'ctaPanel.support') as any)}
                 </p>
               </div>
             </div>

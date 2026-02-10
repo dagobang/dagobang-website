@@ -1,7 +1,7 @@
 {
    "name": "dagobang-website",
    "version": "0.1.0",
-   "private": false,
+   "license": "GPL-3.0-only",
    "author": "0xSeasonsRich",
    "scripts": {
       "dev": "next dev",

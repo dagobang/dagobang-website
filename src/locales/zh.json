@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "title": "Dagobang 打狗棒 —— 0.1%手续费的 Meme 交易浏览器插件",
+    "title": "Dagobang 打狗棒 —— 低费率 Meme 交易浏览器插件",
     "description": "Dagobang 是一款面向 Meme 交易的非托管浏览器插件，在你熟悉的看盘网站上完成链上买卖，支持静默签名、自定义隐私 RPC 与极低手续费。"
   },
   "Nav": {
@@ -13,10 +13,10 @@
   },
   "Hero": {
     "badge": "Dagobang 打狗棒 · Beta",
-    "title": "0.1% 手续费的 Meme 交易插件",
-    "subtitleLine1": "在你熟悉的 K 线页面，唤起悬浮窗极速下单",
-    "subtitleLine2": "极低手续费 · 本地私钥自持 · 隐私节点防夹",
-    "subtitleLine3": "",
+    "title": "少交手续费，就用打狗棒",
+    "subtitleLine1": "低费率 Meme 交易浏览器插件",
+    "subtitleLine2": "直接叠加在看盘网站上的交易悬浮窗，唤起即下单",
+    "subtitleLine3": "本地私钥自持 · 静默签名 · 支持自定义隐私 RPC",
     "primaryCta": "立即下载插件",
     "secondaryCta": "安装教程",
     "primaryCtaNote": "适用于 Chrome / Edge · 1分钟快速安装",
@@ -31,7 +31,7 @@
     "description": "削减一切摩擦，把手续费、安全和操作节奏优化到极致。",
     "fees": {
       "title": "极低手续费",
-      "body": "插件费率仅 0.1%，大幅降低高频交易成本，利润最大化。",
+      "body": "插件费率当前为 0%，后续计划调整至 0.1%，大幅降低高频交易成本，利润最大化。",
       "note": "费率透明可查"
     },
     "nonCustodial": {
@@ -84,27 +84,51 @@
     "eyebrow": "安装教程",
     "title": "如何安装 Dagobang 插件（Chrome / Edge）",
     "subtitle": "简单 4 步，开启极速交易之旅",
-    "intro": "目前需要手动加载解压后的扩展包，整个过程大约 1 分钟。",
+    "intro": "通过 Chrome 商店安装，整个过程大约 1 分钟。",
+    "modes": {
+      "webStore": "Chrome 商店",
+      "github": "GitHub 本地安装"
+    },
     "ctaPanel": {
       "title": "准备好了吗？",
-      "body": "立即下载 Dagobang，体验下一代链上交易工具。",
-      "support": "支持 Windows & Mac"
+      "body": "打开 Chrome 商店页面，一键添加 Dagobang 到浏览器。",
+      "support": "支持 Windows & Mac",
+      "githubTitle": "审核很慢？直接本地安装",
+      "githubBody": "从 GitHub 下载最新安装包，解压后在扩展页开启开发者模式并加载。",
+      "githubCta": "打开 GitHub Releases",
+      "githubSupport": "建议仅从官方仓库下载"
     },
     "step1": {
-      "title": "下载插件安装包",
-      "body": "在页面顶部点击「立即下载插件（内测版）」，将压缩包保存到本地并解压到任意目录。"
+      "title": "打开 Chrome 商店",
+      "body": "进入 Dagobang 插件页面，点击「添加至 Chrome」。"
     },
     "step2": {
-      "title": "打开扩展管理页面",
-      "body": "在浏览器地址栏输入 chrome://extensions 并回车，在右上角打开「开发者模式」。"
+      "title": "确认安装",
+      "body": "在弹窗中点击「添加扩展程序」，等待安装完成。"
     },
     "step3": {
-      "title": "加载已解压的扩展程序",
-      "body": "点击「加载已解压的扩展程序」，选择刚刚解压的插件文件夹。安装成功后，你会在浏览器右上角看到 Dagobang 图标。"
+      "title": "固定到工具栏",
+      "body": "点击右上角拼图图标，在列表中找到 Dagobang 并固定，方便随时使用。"
     },
     "step4": {
-      "title": "固定插件图标（可选）",
-      "body": "点击右上角的小拼图图标，在列表中找到 Dagobang，将其固定到工具栏，方便随时使用。"
+      "title": "打开并开始使用",
+      "body": "打开支持的看盘网站，从工具栏启动 Dagobang 悬浮窗开始交易。"
+    },
+    "localStep1": {
+      "title": "从 GitHub 下载最新包",
+      "body": "进入 Releases，下载最新的安装包并保存到本地。"
+    },
+    "localStep2": {
+      "title": "解压到本地目录",
+      "body": "将压缩包解压到任意文件夹，确保目录结构完整。"
+    },
+    "localStep3": {
+      "title": "加载已解压扩展",
+      "body": "打开 chrome://extensions/，开启开发者模式，点击「加载已解压的扩展程序」。"
+    },
+    "localStep4": {
+      "title": "固定并开始使用",
+      "body": "固定 Dagobang 到工具栏，刷新看盘网站后即可使用悬浮窗下单。"
     }
   },
   "FAQ": {
@@ -117,7 +141,7 @@
     },
     "q2": {
       "question": "Dagobang 的手续费是多少？",
-      "answer": "插件交易手续费仅 0.1%，你另需支付链上 Gas 和 DEX 协议费。"
+      "answer": "插件交易手续费当前为 0%，后续计划调整至 0.1%；你另需支付链上 Gas 和 DEX 协议费。"
     },
     "q3": {
       "question": "静默签名真的安全吗？",
