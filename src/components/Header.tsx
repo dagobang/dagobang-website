@@ -30,6 +30,7 @@ export default function Header() {
     { key: 'security', href: '#security' },
     { key: 'faq', href: '#faq' },
     { key: 'contact', href: '#contact' },
+    { key: 'docs', href: 'https://seasonsrich.gitbook.io/dagobang' },
   ];
 
   return (
