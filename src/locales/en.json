@@ -129,6 +129,11 @@
     "localStep4": {
       "title": "Pin & start using it",
       "body": "Pin Dagobang to the toolbar, refresh your chart site, and open the overlay panel."
+    },
+    "privacyCard": {
+      "title": "Optional: Privacy nodes (Protect RPC)",
+      "body": "With Anti‑MEV enabled, your tx is broadcast via Protect RPC endpoints in a race. If you only use them for sending transactions, free plans are usually enough. We recommend 3–4 endpoints, preferably in the same region as your VPN exit (e.g., HK/SG).",
+      "cta": "See FAQ: setup & recommendations"
     }
   },
   "FAQ": {
@@ -166,6 +171,10 @@
     "q8": {
       "question": "How should I configure custom RPC endpoints?",
       "answer": "In the extension settings, enter one RPC URL per line. It is recommended to mix endpoints from different providers, for example a combination of public and paid nodes, and to prioritize official or reputable providers you trust. This helps balance speed, stability and privacy instead of relying on a single crowded public endpoint."
+    },
+    "q9": {
+      "question": "How do I set up Protect RPC? Any recommended providers?",
+      "answer": "Protect RPC is mainly used for broadcasting signed transactions (sending tx). The traffic is small, so free plans are usually enough.\n\nSetup (Popup → Settings):\n1) Network: put read/quote RPCs under RPC URLs (multiple is fine)\n2) Turn on Anti‑MEV\n3) Add 3–4 endpoints under Protected RPC URLs (one per line, mix providers)\n4) Save\n\nTips for HK/SG VPN:\n- Prefer endpoints close to your VPN exit region (SG/HK) to reduce RTT\n- Mix 1 stable provider + 1 trading-oriented provider + 1–2 backups\n- Don't add too many endpoints to avoid rate-limits / risk control\n\nCopy-paste template (replace YOUR_KEY with yours, never share real keys):\nhttps://bsc-mainnet.nodereal.io/v1/YOUR_KEY\nhttps://bsc-mainnet.core.chainstack.com/YOUR_KEY\nhttps://bsc.blockrazor.xyz/YOUR_KEY\nhttps://go.getblock.io/YOUR_KEY"
     }
   },
   "Footer": {

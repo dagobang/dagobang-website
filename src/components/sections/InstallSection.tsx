@@ -96,6 +96,16 @@ export function InstallSection() {
                   </div>
                 )
               })}
+
+              <div className="rounded-2xl border border-zinc-200 bg-zinc-50 px-4 py-4 text-left dark:border-zinc-800 dark:bg-zinc-950">
+                <div className="text-sm font-bold text-zinc-900 dark:text-white">{t('privacyCard.title' as any)}</div>
+                <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                  {t('privacyCard.body' as any)}
+                </p>
+                <a href="#faq" className="mt-2 inline-flex text-sm font-bold text-emerald-600 hover:underline dark:text-emerald-400">
+                  {t('privacyCard.cta' as any)}
+                </a>
+              </div>
             </div>
 
             {/* Action Panel */}

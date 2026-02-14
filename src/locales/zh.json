@@ -129,6 +129,11 @@
     "localStep4": {
       "title": "固定并开始使用",
       "body": "固定 Dagobang 到工具栏，刷新看盘网站后即可使用悬浮窗下单。"
+    },
+    "privacyCard": {
+      "title": "可选：隐私节点（Protect RPC）",
+      "body": "开启 Anti‑MEV 后，交易会通过你填写的 Protect RPC 竞速广播。只用于提交交易的话，大多数服务商免费计划就够用；建议配置 3–4 条（尽量选择与你 VPN 出口同区域）。",
+      "cta": "查看 FAQ：如何配置与推荐节点"
     }
   },
   "FAQ": {
@@ -166,6 +171,10 @@
     "q8": {
       "question": "如何正确配置自定义 RPC？",
       "answer": "在插件设置页按行填写 RPC URL，每行一个节点地址。建议同时配置来自不同提供方的多个节点（例如公共节点与付费节点混合），并优先选择你信任的官方或知名服务商，以在速度、稳定性和隐私之间取得平衡。"
+    },
+    "q9": {
+      "question": "如何配置隐私节点（Protect RPC）？推荐哪些节点？",
+      "answer": "Protect RPC 主要只用于“提交交易”（广播已签名交易），因此流量很小：大多数服务商注册免费计划一般就够用。\n\n配置步骤（Popup → Settings）：\n1）Network：在 RPC URLs 填读链/报价用节点（可多条）\n2）打开 Anti‑MEV\n3）在 Protected RPC URLs 每行填 1 条保护节点（建议 3–4 条，不同服务商混搭）\n4）保存修改\n\n选型建议（香港/新加坡 VPN）：\n- 优先选与你 VPN 出口同区域（SG/HK）的节点，降低 RTT\n- 组合思路：1 个稳定大厂 + 1 个交易向节点 + 1–2 个补充节点\n- 节点不宜太多，避免更容易触发限流/风控\n\n可直接照抄的 Protected RPC 模板（把 YOUR_KEY 替换成你自己的，不要公开真实 Key）：\nhttps://bsc-mainnet.nodereal.io/v1/YOUR_KEY\nhttps://bsc-mainnet.core.chainstack.com/YOUR_KEY\nhttps://bsc.blockrazor.xyz/YOUR_KEY\nhttps://go.getblock.io/YOUR_KEY"
     }
   },
   "Security": {

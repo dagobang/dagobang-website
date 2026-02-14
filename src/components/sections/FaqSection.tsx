@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 export function FaqSection() {
   const t = useTranslations('FAQ');
-  const items = [1, 2, 3, 4, 5, 6, 7, 8];
+  const items = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
@@ -63,7 +63,7 @@ export function FaqSection() {
                   >
                     <div className="overflow-hidden">
                       <div className="px-5 pb-5 pt-0">
-                        <p className="text-sm md:text-base leading-relaxed text-zinc-600 dark:text-zinc-400">
+                        <p className="text-sm md:text-base leading-relaxed text-zinc-600 dark:text-zinc-400 whitespace-pre-line">
                           {t(`q${index}.answer` as any)}
                         </p>
                       </div>
