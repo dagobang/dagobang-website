@@ -1,12 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Fuel, GripHorizontal, Pencil, RefreshCw, Sliders, X, Zap } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations, useLocale } from 'next-intl';
-
-import { BNBCoinIcon } from '../Coins';
 
 export function HeroSection() {
   const t = useTranslations('Hero');
@@ -86,117 +83,15 @@ export function HeroSection() {
           >
             <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-emerald-500 to-teal-500 opacity-30 blur-2xl dark:opacity-20" />
 
-            <div className="relative rounded-3xl border border-slate-200 dark:border-zinc-800 bg-gradient-to-br from-slate-50 via-white to-slate-100 dark:from-zinc-900 dark:via-black dark:to-zinc-950 p-5 shadow-2xl">
-              <div className="mb-3 flex items-center justify-between text-xs text-slate-500 dark:text-zinc-400">
-                <div className="flex items-center gap-2">
-                  <Image src="/logo.svg" alt="Dagobang Logo" width={24} height={24} />
-                  <span className="font-medium text-slate-900 dark:text-zinc-200">Dagobang</span>
-                </div>
-                <span className="rounded-full border border-slate-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-2 py-0.5 text-[10px] text-slate-500 dark:text-zinc-400">
-                  {t('screenshotBadge')}
-                </span>
-              </div>
-
-              <div className="rounded-2xl border border-zinc-800 bg-[#050608] text-[11px] text-zinc-200 shadow-sm overflow-hidden">
-                <div className="flex items-center justify-between px-3 py-2 border-b border-zinc-800 bg-[#050608]">
-                  <div className="flex items-center gap-2">
-                    <Image src="/logo.svg" alt="Dagobang Logo" width={16} height={16} />
-                    <Pencil size={14} className="text-zinc-400" />
-                  </div>
-                  <div className="flex items-center justify-center">
-                    <GripHorizontal size={14} className="text-zinc-500" />
-                  </div>
-                  <button className="flex items-center justify-center text-zinc-400 hover:text-zinc-200 transition-colors">
-                    <X size={14} />
-                  </button>
-                </div>
-
-                <div className="px-4 pt-4 pb-3 space-y-3">
-                  <div className="flex items-center justify-between text-xs">
-                    <div className="text-[13px] font-semibold text-zinc-50">
-                      {isZh ? '买入' : 'Buy'}
-                    </div>
-                    <div className="flex items-center gap-1 text-[11px]">
-                      <BNBCoinIcon size={{ width: "14", height: "14" }} className="inline-block" />
-                      <span className="text-amber-300 text-[12px]">0.1140</span>
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-4 gap-2">
-                    {[0.01, 0.1, 0.5, 1.0].map((value) => (
-                      <button
-                        key={value}
-                        className="h-9 rounded-xl border border-emerald-500/60 bg-emerald-500/10 text-center text-[12px] font-semibold text-emerald-300 hover:bg-emerald-500/20 hover:border-emerald-400 transition-colors"
-                      >
-                        {value.toFixed(2).replace(/0+$/, '').replace(/\.$/, '')}
-                      </button>
-                    ))}
-                  </div>
-
-                  <div className="flex items-center justify-between text-[10px] text-zinc-500">
-                    <div className="flex items-center gap-4">
-                      <div className="flex items-center gap-1">
-                        <Zap size={11} className="text-zinc-400" />
-                        <span>{isZh ? '极速' : 'Turbo'}</span>
-                      </div>
-                      <div className="flex items-center gap-1">
-                        <Fuel size={11} className="text-zinc-400" />
-                        <span>{isZh ? '标准' : 'Standard'}</span>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <Sliders size={11} className="text-zinc-400" />
-                      <span>{isZh ? '默认40%' : 'Default40%'}</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="h-px bg-zinc-800 mx-3" />
-
-                <div className="px-4 pt-4 pb-4 space-y-3">
-                  <div className="flex items-center justify-between text-xs">
-                    <div className="text-[13px] font-semibold text-zinc-50">
-                      {isZh ? '卖出' : 'Sell'}
-                    </div>
-                    <div className="flex items-center gap-1 text-[11px]">
-                      <span className="text-zinc-400">0</span>
-                      <span className="text-amber-400">币安人生</span>
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-4 gap-2">
-                    {[10, 25, 50, 100].map((value) => (
-                      <button
-                        key={value}
-                        className="h-9 rounded-xl border border-rose-500/60 bg-rose-500/10 text-center text-[12px] font-semibold text-rose-300 hover:bg-rose-500/20 hover:border-rose-400 transition-colors"
-                      >
-                        {value}%
-                      </button>
-                    ))}
-                  </div>
-
-                  <div className="flex items-center justify-between text-[10px] text-zinc-500">
-                    <div className="flex items-center gap-3">
-                      <div className="flex items-center gap-1">
-                        <Zap size={11} className="text-zinc-400" />
-                        <span>{isZh ? '极速' : 'Turbo'}</span>
-                      </div>
-                      <div className="flex items-center gap-1">
-                        <Fuel size={11} className="text-zinc-400" />
-                        <span>{isZh ? '标准' : 'Standard'}</span>
-                      </div>
-                      <div className="flex items-center gap-1">
-                        <RefreshCw size={11} className="text-zinc-400" />
-                        <span>{isZh ? '授权' : 'Approve'}</span>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <Sliders size={11} className="text-zinc-400" />
-                      <span>{isZh ? '默认40%' : 'Default40%'}</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="relative rounded-3xl border border-slate-200 dark:border-zinc-800 bg-gradient-to-br from-slate-50 via-white to-slate-100 dark:from-zinc-900 dark:via-black dark:to-zinc-950 p-4 shadow-2xl">
+              <Image
+                src={isZh ? '/images/case1-zh.png' : '/images/case1.png'}
+                alt="Dagobang screenshot"
+                width={1200}
+                height={900}
+                className="w-full h-auto rounded-2xl"
+                priority
+              />
             </div>
           </motion.div>
         </motion.div>
