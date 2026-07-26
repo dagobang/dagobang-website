@@ -1,6 +1,6 @@
 'use client';
 
-import { Percent, ShieldCheck, Zap, Network, Layers } from 'lucide-react';
+import { Percent, ShieldCheck, Zap, Network, Layers, Bot } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
 export function FeaturesSection() {
@@ -13,23 +13,28 @@ export function FeaturesSection() {
       accent: "bg-emerald-50 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-500/20",
     },
     {
-      key: "nonCustodial",
-      icon: ShieldCheck,
+      key: "multiChain",
+      icon: Layers,
       accent: "bg-sky-50 dark:bg-sky-500/10 text-sky-700 dark:text-sky-300 border-sky-200 dark:border-sky-500/20",
     },
-    // {
-    //   key: "silentSign",
-    //   icon: Zap,
-    //   accent: "bg-purple-50 dark:bg-purple-500/10 text-purple-700 dark:text-purple-300 border-purple-200 dark:border-purple-500/20",
-    // },
     {
-      key: "rpc",
+      key: "automation",
+      icon: Zap,
+      accent: "bg-purple-50 dark:bg-purple-500/10 text-purple-700 dark:text-purple-300 border-purple-200 dark:border-purple-500/20",
+    },
+    {
+      key: "sniper",
+      icon: Bot,
+      accent: "bg-amber-50 dark:bg-amber-500/10 text-amber-700 dark:text-amber-300 border-amber-200 dark:border-amber-500/20",
+    },
+    {
+      key: "execution",
       icon: Network,
       accent: "bg-amber-50 dark:bg-amber-500/10 text-amber-700 dark:text-amber-300 border-amber-200 dark:border-amber-500/20",
     },
     {
-      key: "overlay",
-      icon: Layers,
+      key: "nonCustodial",
+      icon: ShieldCheck,
       accent: "bg-rose-50 dark:bg-rose-500/10 text-rose-700 dark:text-rose-300 border-rose-200 dark:border-rose-500/20",
     },
   ];

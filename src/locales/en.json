@@ -1,7 +1,7 @@
 {
   "Metadata": {
     "title": "Dagobang - Low-Fee Meme Trading Extension",
-    "description": "Dagobang is a non-custodial browser extension for Meme trading. Trade on-chain directly on your favorite chart sites with silent signing, custom private RPC, and ultra-low fees."
+    "description": "Dagobang is a non-custodial multi-chain browser extension for high-frequency meme trading, with floating in-page execution, limit orders, advanced auto-sell, tweet and new-coin sniping, private broadcast paths, and Solana SWQoS."
   },
   "Nav": {
     "features": "Highlights",
@@ -15,9 +15,9 @@
   "Hero": {
     "badge": "Dagobang 打狗棒 · Beta",
     "title": "Pay less in fees. Trade with Dagobang.",
-    "subtitleLine1": "A low-fee meme trading browser extension",
-    "subtitleLine2": "An overlay trading panel on your favorite chart sites. Open and trade instantly.",
-    "subtitleLine3": "Self-custody · Silent signing · Custom private RPC support",
+    "subtitleLine1": "A multi-chain browser extension for high-frequency meme trading",
+    "subtitleLine2": "Open the floating panel directly on GMGN, Axiom, Four.Meme and similar pages to trade, place orders, and run monitoring workflows.",
+    "subtitleLine3": "Self-custody · Limit orders / auto-sell · Tweet & new-coin sniping",
     "primaryCta": "Download Extension",
     "secondaryCta": "Installation Tutorial",
     "primaryCtaNote": "Chrome / Edge supported · 1 min Fast Install",
@@ -29,56 +29,61 @@
   "Highlights": {
     "eyebrow": "Core Advantages",
     "title": "Born for High-Frequency Trading",
-    "description": "Cutting all friction. Optimizing fees, security, and operation rhythm to the extreme.",
+    "description": "From multi-chain execution to automation strategies, Dagobang tries to keep the most important meme-trading tools inside one extension.",
     "fees": {
       "title": "Ultra-low Fees",
-      "body": "Plugin fee is 0% now and is planned to adjust to 0.1% later. Significantly reduces high-frequency trading costs for maximum profit.",
+      "body": "The extension-side fee is currently 0% during cold start, with a planned cap within 0.1%, keeping additional trading overhead as low as possible.",
       "note": "Transparent Fees"
+    },
+    "multiChain": {
+      "title": "Multi-Chain & Multi-Wallet",
+      "body": "The current codebase already supports BSC, Ethereum, Hyperliquid EVM, and Solana, with per-chain wallets, trade settings, RPC paths, and broadcast controls.",
+      "note": "Built for chain rotation"
+    },
+    "automation": {
+      "title": "Limit Orders & Auto-Sell",
+      "body": "Supports Low Buy, High Buy, TP, SL, Trailing Stop, plus advanced post-entry strategies such as fixed TP/SL ladders and rolling take profit.",
+      "note": "Execution continues after entry"
+    },
+    "sniper": {
+      "title": "Monitoring & Sniping",
+      "body": "Includes tweet monitor, tweet sniper, new-pool monitor, token sniper, and new-coin sniper with filters, WS confirmation, and rapid-exit logic.",
+      "note": "More than a click-to-buy widget"
+    },
+    "execution": {
+      "title": "Execution & Broadcast Tuning",
+      "body": "Supports custom RPC, Protect RPC, private broadcast paths, optional bloXroute, and Solana SWQoS to reduce latency between signal and submission.",
+      "note": "Built for latency-sensitive setups"
     },
     "nonCustodial": {
       "title": "Non-custodial Keys",
-      "body": "No centralized server. Private keys encrypted and stored locally. Security model consistent with major wallets.",
+      "body": "Seed phrases and private keys stay encrypted locally, with signing performed inside the browser instead of relying on a custodial backend.",
       "note": "Your Assets Fully Controlled by You"
-    },
-    "silentSign": {
-      "title": "Silent Signing Mode",
-      "body": "Say goodbye to frequent popups. Auto-sign and broadcast after authorization. Continuous ordering is silky smooth.",
-      "note": "Efficiency Meets Security"
-    },
-    "rpc": {
-      "title": "Private RPC Support",
-      "body": "Connect to self-hosted or paid private nodes to avoid public node rate limits or front-running.",
-      "note": "Designed for Professional Traders"
-    },
-    "overlay": {
-      "title": "Seamless Overlay Experience",
-      "body": "Does not change original browsing habits. Non-intrusive floating window overlaid on the page. Ready to use.",
-      "note": "Runs Independently, No Interference"
     }
   },
   "HowItWorks": {
     "eyebrow": "How It Works",
     "title": "How Dagobang Works?",
-    "intro": "From chart viewing to execution, the entire link is locally constructed, wallet signed, and RPC broadcast.",
+    "intro": "From page detection to local signing, broadcast racing, and automated follow-up actions, the critical execution path is kept as local as possible.",
     "step1": {
-      "title": "Browse Token on Chart Sites",
-      "body": "Open your habitual chart site. Dagobang will attempt to identify the current token contract address (e.g., BSC contract) from the page."
+      "title": "Detect chain and token context",
+      "body": "When you open a supported market, token, or address page, Dagobang tries to detect the current chain, token address, and page context."
     },
     "step2": {
-      "title": "Get Quotes via RPC & DEX",
-      "body": "Plugin uses your configured RPC node to read on-chain data and fetch prices, depth, and estimated slippage via DEX / Aggregator official APIs."
+      "title": "Load quote, wallet, and market state",
+      "body": "The extension uses your configured RPCs and chain interfaces to load quotes, balances, pool data, and the execution context needed for trading."
     },
     "step3": {
-      "title": "Construct Transaction Locally",
-      "body": "You select buy or sell, set amount and slippage in the floating window. Dagobang constructs the corresponding Swap transaction locally."
+      "title": "Configure trade or strategy locally",
+      "body": "You can place a manual trade, create limit orders, enable advanced auto-sell, or run tweet / new-coin sniper tasks from the floating workspace."
     },
     "step4": {
-      "title": "Browser Silent Signing",
-      "body": "After wallet connection and basic authorization, transactions initiated by Dagobang can be silently signed within the browser, usually without per-transaction popup confirmations."
+      "title": "Sign locally and broadcast through multiple paths",
+      "body": "After unlock and authorization, Dagobang signs inside the browser and can submit through RPC, Protect RPC, private broadcast routes, or Solana SWQoS."
     },
     "step5": {
-      "title": "Broadcast On-Chain & View Results",
-      "body": "Signed transactions are broadcast to the chain via your chosen RPC. You can check status and history in your wallet or block explorer."
+      "title": "Keep tracking orders, positions, and tasks",
+      "body": "After submission, you can continue to manage orders, monitor signals, and let auto-sell or sniper workflows keep running inside the same toolchain."
     }
   },
   "Install": {
@@ -143,11 +148,11 @@
     "intro": "Here are a few common questions. For more, feel free to contact us at the bottom.",
     "q1": {
       "question": "Does Dagobang custody my assets or private keys?",
-      "answer": "No. We do not touch your private keys. All assets and signatures are managed by your browser wallet. The security model is consistent with mainstream wallet plugins."
+      "answer": "No. Dagobang follows a non-custodial model: seed phrases and private keys are stored encrypted in your local browser environment, and signing happens locally instead of on our servers."
     },
     "q2": {
       "question": "What are the fees for Dagobang?",
-      "answer": "The plugin fee is 0% now and is planned to adjust to 0.1% later. You also need to pay on-chain Gas and DEX protocol fees."
+      "answer": "The extension-side fee is currently 0% during cold start and is planned to stay within 0.1% later. You still pay on-chain Gas, Priority / Tip, and DEX or aggregator protocol fees."
     },
     "q3": {
       "question": "Is silent signing really safe?",
@@ -163,11 +168,11 @@
     },
     "q6": {
       "question": "Which chains are currently supported?",
-      "answer": "The current version mainly supports BSC chain trading. Solana is the next chain we prioritize in our plan and will be launched gradually in subsequent versions."
+      "answer": "The current codebase already supports BSC, Ethereum, Hyperliquid EVM, and Solana. Support depth may vary by site and execution path, but Dagobang is no longer a single-chain tool."
     },
     "q7": {
       "question": "Why can trades be sent without a popup confirmation?",
-      "answer": "After you enter your password and unlock the wallet inside the extension, the decrypted key temporarily resides in your browser's memory. In scenarios where silent signing is enabled, Dagobang uses this key locally to sign transactions without opening a popup for every single one, trading one layer of confirmation for faster execution. You can lock the extension at any time or revoke its permissions in your wallet to clear the key from memory and return to a popup based flow."
+      "answer": "After you unlock the extension, the decrypted key temporarily lives in local browser memory. In silent-signing scenarios, Dagobang uses that key locally to sign without opening a popup for every trade, trading one layer of confirmation for faster execution. You can lock the extension at any time to clear the unlocked state and return to a more conservative workflow."
     },
     "q8": {
       "question": "How should I configure custom RPC endpoints?",
@@ -184,23 +189,23 @@
   },
   "Contact": {
     "eyebrow": "Contact Us",
-    "title": "Contact & Roadmap",
-    "intro": "Dagobang is still iterating fast. Any feedback is welcome.",
+    "title": "Contact & Direction",
+    "intro": "Dagobang is still moving fast, but it is already more than an early quick-buy tool. It is becoming a broader multi-chain meme-trading workspace.",
     "telegramLabel": "Telegram",
     "telegramValue": "https://t.me/dagobang",
     "twitterLabel": "Twitter / X",
     "twitterValue": "https://x.com/i/communities/2009107417641177478",
-    "roadmapTitle": "Product Roadmap",
-    "shortTermTitle": "Phase 1",
-    "shortTerm1": "Perfect BSC trading core functions.",
-    "shortTerm2": "Optimize silent signing & RPC interaction experience.",
-    "shortTerm3": "Improve adaptation for mainstream chart sites.",
-    "midTermTitle": "Phase 2",
-    "midTerm1": "Integrate Solana ecosystem.",
-    "midTerm2": "Add contract security detection function.",
-    "longTermTitle": "Phase 3",
-    "longTerm1": "Launch more automated auxiliary trading tools.",
-    "longTerm2": "Expand multi-chain support."
+    "roadmapTitle": "Current Capabilities & Next Direction",
+    "shortTermTitle": "Live Today",
+    "shortTerm1": "Multi-chain trading, multi-wallet management, and in-page floating execution.",
+    "shortTerm2": "Limit orders, advanced auto-sell, trailing stop, and rolling take-profit workflows.",
+    "shortTerm3": "Tweet monitor, tweet sniper, new-pool monitor, token sniper, and new-coin sniper.",
+    "midTermTitle": "Current Focus",
+    "midTerm1": "Keep strengthening RPC, private broadcast, Protect RPC, and Solana SWQoS submission paths.",
+    "midTerm2": "Improve site compatibility, execution stability, and auto-task workflows.",
+    "longTermTitle": "Next Direction",
+    "longTerm1": "Build out richer review, analysis, reminders, and more detailed strategy orchestration.",
+    "longTerm2": "Keep expanding automation, risk controls, and more chains / platforms."
   },
   "Privacy": {
     "title": "Dagobang Browser Extension Privacy Policy",

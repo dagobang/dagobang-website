@@ -1,5 +1,5 @@
 'use client';
-import { Mail, Send, Twitter, CheckCircle2, Clock, ArrowRight, MapPin, Flag } from 'lucide-react';
+import { Mail, Send, AtSign, CheckCircle2, Clock, ArrowRight, Flag } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
 export function ContactSection() {
@@ -20,7 +20,7 @@ export function ContactSection() {
                <div>
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-6">
                      <Mail size={12} />
-                     Get in Touch
+                     {t('eyebrow')}
                   </div>
                   <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
                      {t('title')}
@@ -41,9 +41,9 @@ export function ContactSection() {
                         </div>
                      </a>
 
-                     <a href={`https://twitter.com/${t('twitterValue').replace('@', '')}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+                     <a href={t('twitterValue')} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
                         <div className="w-12 h-12 rounded-xl bg-zinc-800 border border-zinc-700 flex items-center justify-center group-hover:bg-black group-hover:text-white group-hover:border-zinc-600 transition-all duration-300">
-                           <Twitter size={20} strokeWidth={1.5} />
+                           <AtSign size={20} strokeWidth={1.5} />
                         </div>
                         <div>
                            <h3 className="text-base font-bold mb-1">{t('twitterLabel')}</h3>
